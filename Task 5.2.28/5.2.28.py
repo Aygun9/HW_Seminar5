@@ -6,11 +6,10 @@
 #<function_name>(3,0) -> 3
 
 def sum_a_b(a,b:int):
-    if a >= 0 and b >=0:
-        print(a+b)
-    else :
-        print(None)
+    if a ==0:
+      return b
+    return sum_a_b(a-1,b+1)
 
-sum_a_b(0,0)
-sum_a_b(0,2)
-sum_a_b(3,0)
+print(sum_a_b(0,0))
+print(sum_a_b(0,2))
+print(sum_a_b(3,0))
