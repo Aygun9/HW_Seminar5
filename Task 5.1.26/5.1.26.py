@@ -7,9 +7,11 @@
 #<function_name>(2,4) -> 16
 
 def pow_a_b(a,b):
-    print(a**b)
+    if b==0:
+     return 1
+    return a* pow_a_b(a, b-1)
 
-pow_a_b(2,0)
-pow_a_b(2,1)
-pow_a_b(2,3)
-pow_a_b(2,4)
+print (pow_a_b(2,0))
+print (pow_a_b(2,1))
+print (pow_a_b(2,3))
+print (pow_a_b(2,4))
